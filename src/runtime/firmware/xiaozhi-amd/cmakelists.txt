@@ -1,0 +1,48 @@
+# The following lines of boilerplate have to be in your project's
+# CMakeLists in this exact order for cmake to work correctly
+cmake_minimum_required(VERSION 3.16)
+
+# Optional reproducible build using the already downloaded, locked components.
+# Normal builds continue to use the ESP-IDF component manager.
+if(AMD_OFFLINE_BUILD)
+    file(GLOB AMD_OFFLINE_COMPONENT_DIRS LIST_DIRECTORIES true "${CMAKE_CURRENT_SOURCE_DIR}/../../.build-tools/idf-offline/*")
+    foreach(component_dir ${AMD_OFFLINE_COMPONENT_DIRS})
+        if(EXISTS "${component_dir}/CMakeLists.txt")
+            list(APPEND EXTRA_COMPONENT_DIRS "${component_dir}")
+            get_filename_component(component_name "${component_dir}" NAME)
+            list(APPEND AMD_OFFLINE_COMPONENTS "${component_name}")
+        endif()
+    endforeach()
+endif()
+
+# Add this line to disable the specific warning
+add_compile_options(-Wno-missing-field-initializers)
+
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+if(AMD_OFFLINE_BUILD)
+    # Managed manifests normally resolve both namespace__name and short name.
+    # Offline junctions keep sources untouched; supply that name lookup here.
+    function(__component_get_target result name)
+        string(REPLACE "::" "_" alias "${name}")
+        string(REGEX REPLACE "^.*__" "" short_name "${name}")
+        idf_build_get_property(targets __COMPONENT_TARGETS)
+        set(found "")
+        foreach(target ${targets})
+            __component_get_property(component_name ${target} COMPONENT_NAME)
+            string(REGEX REPLACE "^.*__" "" short_component "${component_name}")
+            if(target STREQUAL "___${alias}" OR component_name STREQUAL name OR short_component STREQUAL short_name)
+                set(found "${target}")
+                break()
+            endif()
+        endforeach()
+        set(${result} "${found}" PARENT_SCOPE)
+    endfunction()
+endif()
+# "Trim" the build. Include the minimal set of components, main, and anything it depends on.
+idf_build_set_property(MINIMAL_BUILD ON)
+
+set(PROJECT_VER "2.2.6")
+project(xiaozhi)
+if(AMD_OFFLINE_BUILD AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../../.build-tools/offline-deps.cmake")
+    include("${CMAKE_CURRENT_SOURCE_DIR}/../../.build-tools/offline-deps.cmake")
+endif()

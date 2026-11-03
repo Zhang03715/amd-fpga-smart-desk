@@ -1,0 +1,4 @@
+# Isolated computer prototype; do not install into the PYNQ system environment.
+mediapipe==1.1.0
+opencv-contrib-python==5.0.0.93
+numpy==2.5.3

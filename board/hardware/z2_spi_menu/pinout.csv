@@ -1,0 +1,26 @@
+z2_physical_pin,package_pin,signal,direction,connection
+3,W18,led1_data,out,WS2812 #1 via 5V AHCT buffer
+7,Y18,m3_step,out,D36A #2 P1.8 ST1
+8,V6,m3_dir,out,D36A #2 P1.6 DIR1
+10,Y6,m3_en,out,D36A #2 P1.4 EN1
+11,U7,m1_step,out,D36A P1.8 ST1
+12,C20,m4_step,out,D36A #2 P1.7 ST2
+13,V7,m1_dir,out,D36A P1.6 DIR1
+15,U8,m1_en,out,D36A P1.4 EN1 high active
+16,W6,m2_step,out,D36A P1.7 ST2
+18,Y7,m2_dir,out,D36A P1.5 DIR2
+22,F20,m2_en,out,D36A P1.3 EN2 high active
+23,W10,m4_dir,out,D36A #2 P1.5 DIR2
+24,F19,m4_en,out,D36A #2 P1.3 EN2
+26,U19,led2_data,out,WS2812 #2 via 5V AHCT buffer
+27,Y16,lcd_sck,out,LCD SCK
+28,Y17,lcd_mosi,out,LCD MOSI/SDA
+29,Y19,lcd_cs_n,out,LCD CS
+31,U18,lcd_dc,out,LCD DC
+32,B20,lcd_rst_n,out,LCD RESET
+33,W8,btn_back_n,in,BACK button to GND
+35,Y8,s3_uart_tx,out,ESP32-S3 GPIO18 RX
+36,B19,s3_uart_rx,in,ESP32-S3 GPIO17 TX
+37,W9,btn_up_n,in,UP button to GND
+38,A20,btn_down_n,in,DOWN button to GND
+40,Y9,btn_ok_n,in,OK button to GND

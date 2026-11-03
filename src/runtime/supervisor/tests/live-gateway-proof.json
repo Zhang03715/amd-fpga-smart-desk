@@ -1,0 +1,150 @@
+{
+  "gateway_info": {
+    "gateway": "ESP32-S3",
+    "api_version": 1,
+    "transport": "usb_serial_jtag",
+    "usb_connected": true
+  },
+  "audio_status": {
+    "status": "success",
+    "data": {
+      "volume": 60
+    }
+  },
+  "idempotent_retry": true,
+  "unauthenticated": 401,
+  "browser_origin": 403,
+  "deep_json": 400,
+  "protocol.info": {
+    "v": 1,
+    "type": "result",
+    "id": "92022f3e-12",
+    "status": "success",
+    "data": {
+      "name": "amd-desk-uart",
+      "version": 1,
+      "baud": 115200,
+      "framing": "UTF-8 JSON LF",
+      "max_payload_bytes": 2048,
+      "request_id_dedup": true,
+      "ack_timeout_seconds": 2,
+      "max_same_id_retries": 2,
+      "book_timeout_seconds": 95,
+      "capabilities": [
+        "book.find",
+        "job.get",
+        "timer",
+        "light.scene",
+        "posture.status"
+      ]
+    }
+  },
+  "status": {
+    "v": 1,
+    "type": "result",
+    "id": "8d1477a1-13",
+    "status": "success",
+    "data": {
+      "mode": "safe",
+      "timer_active": false,
+      "hardware_ready": false,
+      "timer": {
+        "state": "idle",
+        "remaining_seconds": 0
+      },
+      "light": {
+        "scene": "off",
+        "brightness": 0,
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "applied": false
+      },
+      "book_source": "camera_snapshot",
+      "book_backend": "remote_pc"
+    }
+  },
+  "posture.status": {
+    "v": 1,
+    "type": "result",
+    "id": "4ffe9b5d-14",
+    "status": "success",
+    "data": {
+      "classification": "unknown",
+      "stale": true,
+      "detector_connected": false,
+      "sample": null,
+      "detector": {
+        "available": false,
+        "state": "unknown",
+        "camera_mode": null,
+        "age_seconds": 10716.38,
+        "inference_ms": 999.635,
+        "calibration_samples": 0,
+        "baseline_saved": true,
+        "calibration_pending": false
+      }
+    }
+  },
+  "timer.status": {
+    "v": 1,
+    "type": "result",
+    "id": "2ebbc19e-15",
+    "status": "success",
+    "data": {
+      "state": "idle",
+      "remaining_seconds": 0
+    }
+  },
+  "exam.get": {
+    "v": 1,
+    "type": "result",
+    "id": "cdc0716d-16",
+    "status": "success",
+    "data": {
+      "configured": false
+    }
+  },
+  "paper.record.list": {
+    "v": 1,
+    "type": "result",
+    "id": "08bd27b8-18",
+    "status": "success",
+    "data": {
+      "records": [],
+      "limit": 3,
+      "offset": 0
+    }
+  },
+  "wrong_question.list": {
+    "v": 1,
+    "type": "result",
+    "id": "0e01edec-19",
+    "status": "success",
+    "data": {
+      "records": [],
+      "limit": 3,
+      "offset": 0
+    }
+  },
+  "light.calibration": {
+    "v": 1,
+    "type": "result",
+    "id": "9f081e6f-20",
+    "status": "success",
+    "data": {
+      "calibrated": true,
+      "horizontal_count": 14,
+      "vertical_count": 8,
+      "missing_physical": [
+        22
+      ],
+      "calibration_action": "light.calibration",
+      "start_params": {
+        "mode": "start"
+      }
+    }
+  }
+}

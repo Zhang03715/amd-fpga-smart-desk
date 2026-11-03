@@ -1,0 +1,3 @@
+Pillow>=10.1,<13
+# Board: retain the system PYNQ environment. Do not pip-install another PYNQ.
+# Optional USB preview: use the board's OpenCV package (import cv2).

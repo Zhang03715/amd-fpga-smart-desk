@@ -1,0 +1,9 @@
+{
+  "min_confidence": 0.65,
+  "front_lean_delta_degrees": 10.0,
+  "front_head_drop_delta": 0.2,
+  "side_head_offset_delta": 0.18,
+  "side_trunk_delta_degrees": 12.0,
+  "max_scale_change": 0.3,
+  "max_center_shift": 0.22
+}

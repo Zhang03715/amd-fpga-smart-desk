@@ -1,0 +1,12 @@
+{
+  "wns_ns": 0.1,
+  "whs_ns": 0.01,
+  "drc_errors": 0,
+  "unconstrained_paths": 0,
+  "resource_usage": {
+    "LUT": 200
+  },
+  "resource_limits": {
+    "LUT": 1000
+  }
+}

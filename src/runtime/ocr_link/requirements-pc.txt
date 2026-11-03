@@ -1,0 +1,7 @@
+# Reuse .venv-gpu. Exact installed versions are recorded in validation/runtime.json.
+numpy
+opencv-python
+Pillow
+rapidocr-onnxruntime
+onnxruntime-gpu
+# CUDA/cuDNN DLLs must match the installed ONNX Runtime GPU build.

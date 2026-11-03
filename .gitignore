@@ -1,0 +1,7 @@
+build/worktree/
+__pycache__/
+*.pyc
+.env
+*.log
+*.sqlite3*
+report/

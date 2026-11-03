@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-04",
+  "command": "python sim/run_checks.py",
+  "tests_run": 26,
+  "failures": 0,
+  "errors": 0,
+  "hardware_access": false,
+  "scope": "Selected software regressions, not camera accuracy or physical motion acceptance"
+}

@@ -1,0 +1,12 @@
+ESP32-S3-WROOM-1-N8R8 build profile
+
+Flash: 8 MB
+PSRAM: 8 MB Octal, 80 MHz
+Partition table: partitions/v2/8m.csv
+Application slots:
+  ota_0 offset 0x20000, size 0x2f0000
+  ota_1 size 0x2f0000
+Assets:
+  offset 0x600000, size 0x200000
+
+Do not use the former N16 assets address 0x800000 on this module.

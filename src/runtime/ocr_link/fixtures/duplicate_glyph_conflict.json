@@ -1,0 +1,291 @@
+{
+  "matches": [
+    {
+      "text": "\u4e2d\u56fd\u8fd1\u73b0\u4ee3\u53f2\u7eb2\u8981",
+      "ocr_confidence": 0.983,
+      "match_score": 0.0,
+      "title_box": [
+        [
+          224,
+          162
+        ],
+        [
+          252,
+          164
+        ],
+        [
+          240,
+          351
+        ],
+        [
+          213,
+          349
+        ]
+      ],
+      "book_box": [
+        174,
+        139,
+        271,
+        970
+      ],
+      "spine_polygon": null,
+      "flat_extent_audit": null,
+      "boundary_method": "color_peaks_with_extent_check",
+      "visible_region_clipped": false,
+      "location_center": [
+        232.2,
+        256.5
+      ],
+      "normalized_center": [
+        0.1209,
+        0.2375
+      ],
+      "orientation": "upright"
+    }
+  ],
+  "decisions": [
+    {
+      "id": 0,
+      "points": [
+        [
+          219.0,
+          156.0
+        ],
+        [
+          259.0,
+          158.0
+        ],
+        [
+          247.0,
+          358.0
+        ],
+        [
+          207.0,
+          356.0
+        ]
+      ],
+      "v4_text": "\u4e2d\u56fd\u8fd1\u73b0\u4ee3\u53f2\u7eb2\u8981",
+      "v4_confidence": 0.9654534310102463,
+      "native_review": {
+        "roi": [
+          181,
+          132,
+          285,
+          382
+        ],
+        "original_points": [
+          [
+            219.0,
+            156.0
+          ],
+          [
+            259.0,
+            158.0
+          ],
+          [
+            247.0,
+            358.0
+          ],
+          [
+            207.0,
+            356.0
+          ]
+        ],
+        "original_text": "\u4e2d\u56fd\u8fd1\u9650\u4ee3\u53f2\u7eb2\u8981",
+        "original_confidence": 0.9292816370725632,
+        "selected": false,
+        "conflict": false,
+        "crop_file": "native_000.png",
+        "local_points": [
+          [
+            223.0,
+            161.0
+          ],
+          [
+            255.0,
+            162.0
+          ],
+          [
+            244.0,
+            352.0
+          ],
+          [
+            212.0,
+            351.0
+          ]
+        ],
+        "iou": 0.7818926123381569,
+        "text": "\u4e2d\u56fd\u8fd1\u9650\u4ee3\u53f2\u94a2\u8981",
+        "confidence": 0.8264814540743828,
+        "detection_seconds": 0.062044400023296475,
+        "recognition_seconds": 0.03591442108154297,
+        "variants": [
+          {
+            "text": "\u4e2d\u56fd\u8fd1\u9650\u4ee3\u53f2\u94a2\u8981",
+            "confidence": 0.8264814540743828
+          },
+          {
+            "text": "",
+            "confidence": 0.0
+          }
+        ]
+      },
+      "upright_glyph_review": {
+        "method": "upright_glyph_reflow",
+        "column_size": [
+          40,
+          200
+        ],
+        "bands": [
+          [
+            9,
+            28
+          ],
+          [
+            32,
+            52
+          ],
+          [
+            55,
+            74
+          ],
+          [
+            78,
+            97
+          ],
+          [
+            101,
+            121
+          ],
+          [
+            126,
+            144
+          ],
+          [
+            147,
+            167
+          ],
+          [
+            171,
+            192
+          ]
+        ],
+        "discarded_edge_fragments": [],
+        "character_cells": 8,
+        "crop_file": "upright_glyph_000.png",
+        "original_text": "\u4e2d\u56fd\u8fd1\u9650\u4ee3\u53f2\u7eb2\u8981",
+        "original_confidence": 0.9292816370725632,
+        "text": "\u4e2d\u56fd\u8fd1\u73b0\u4ee3\u53f2\u7eb2\u8981",
+        "confidence": 0.9654534310102463,
+        "corroborating_layout": "two_pixel_cell_gap",
+        "selected": true,
+        "attempts": [
+          {
+            "model": "medium_glyph",
+            "text": "\u4e2d\u56fd\u8fd1\u73b0\u4ee3\u53f2\u7eb2\u8981",
+            "confidence": 0.9654534310102463,
+            "corroborating_text": "\u4e2d\u56fd\u8fd1\u73b0\u4ee3\u53f2\u7eb2\u8981",
+            "corroborating_confidence": 0.9855391308665276,
+            "selected": true,
+            "seconds": 0.1437063217163086
+          }
+        ],
+        "seconds": 0.1437063217163086,
+        "selected_model": "medium_glyph"
+      },
+      "recognition_conflict": true,
+      "accepted": false,
+      "reason": "duplicate_same_text_region",
+      "duplicate_of": 24
+    },
+    {
+      "id": 24,
+      "points": [
+        [
+          209.0,
+          351.0
+        ],
+        [
+          222.0,
+          159.0
+        ],
+        [
+          255.0,
+          162.0
+        ],
+        [
+          242.0,
+          354.0
+        ]
+      ],
+      "v4_text": "\u4e2d\u56fd\u8fd1\u73b0\u4ee3\u53f2\u7eb2\u8981",
+      "v4_confidence": 0.9829826056957245,
+      "upright_glyph_review": {
+        "method": "upright_glyph_reflow",
+        "column_size": [
+          33,
+          192
+        ],
+        "bands": [
+          [
+            5,
+            25
+          ],
+          [
+            28,
+            49
+          ],
+          [
+            51,
+            71
+          ],
+          [
+            74,
+            93
+          ],
+          [
+            97,
+            118
+          ],
+          [
+            121,
+            141
+          ],
+          [
+            143,
+            163
+          ],
+          [
+            167,
+            189
+          ]
+        ],
+        "discarded_edge_fragments": [],
+        "character_cells": 8,
+        "crop_file": "upright_glyph_024.png",
+        "original_text": "\u4e2d\u56fd\u8fd1\u9650\u4ee3\u53f2\u7eb2\u59d4",
+        "original_confidence": 0.7725622355937958,
+        "text": "\u4e2d\u56fd\u8fd1\u73b0\u4ee3\u53f2\u7eb2\u8981",
+        "confidence": 0.9829826056957245,
+        "corroborating_layout": "two_pixel_cell_gap",
+        "selected": true,
+        "attempts": [
+          {
+            "model": "medium_glyph",
+            "text": "\u4e2d\u56fd\u8fd1\u73b0\u4ee3\u53f2\u7eb2\u8981",
+            "confidence": 0.9921708479523659,
+            "corroborating_text": "\u4e2d\u56fd\u8fd1\u73b0\u4ee3\u53f2\u7eb2\u8981",
+            "corroborating_confidence": 0.9829826056957245,
+            "selected": true,
+            "seconds": 0.4141561985015869
+          }
+        ],
+        "seconds": 0.4141561985015869,
+        "selected_model": "medium_glyph"
+      },
+      "recognition_conflict": true,
+      "accepted": true,
+      "reason": "blind_all_texts_confidence_gate"
+    }
+  ]
+}
