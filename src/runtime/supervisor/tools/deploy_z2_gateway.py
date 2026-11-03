@@ -29,7 +29,7 @@ python='/usr/local/share/pynq-venv/bin/python3'
 env=dict(os.environ,XILINX_XRT='/usr',BOARD='Pynq-Z2')
 args=[python,'-u','-m','voice_bridge.usb_service','--posture-port','8767','--posture-runtime',str(posture),'--posture-runner',str(incoming/'live-posture.py'),
       '--shelf-calibration',str(root/'usb-calibration-03/calibration.json'),
-      '--book-ocr-server','http://172.19.71.189:8765','--book-ocr-token-file','/home/xilinx/ocr-link-token',
+      '--book-ocr-server','http://192.0.2.10:8765','--book-ocr-token-file','/home/xilinx/ocr-link-token',
       '--book-ocr-output',str(root/'usb-books'),'--db-path',str(root/'usb-desk.sqlite3')]
 log=root/'usb-shelf-service.log'
 if log.exists():shutil.copy2(log,backup/log.name)

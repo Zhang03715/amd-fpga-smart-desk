@@ -494,7 +494,7 @@ class FrameDecoder:
 def add_book_arguments(parser):
     """Shared opt-in configuration for UART service and adapter menu entrypoints."""
     parser.add_argument('--book-image', help='Explicit offline image; never presented as a live camera')
-    parser.add_argument('--book-ocr-server', help='Opt-in PC OCR HTTP origin, e.g. http://10.0.0.2:8787')
+    parser.add_argument('--book-ocr-server', help='Opt-in PC OCR HTTP origin, e.g. http://192.0.2.10:8787')
     parser.add_argument('--book-ocr-token-file', help='Private token file; Linux permissions 600')
     parser.add_argument('--book-camera', help='Remote OCR only: capture camera index or /dev/videoN per request')
     parser.add_argument('--book-camera-runtime-path', help='Existing isolated OpenCV runtime directory')

@@ -1,7 +1,7 @@
 """Exercise the paired native host without printing credentials."""
 from pathlib import Path
 import json,time,urllib.request,urllib.error,uuid
-root=Path('C:/Users/DELL/AppData/Local/AmdDeskHub');url=json.loads((root/'running.json').read_text())['url']
+root=Path('C:/Users/example/AppData/Local/AmdDeskHub');url=json.loads((root/'running.json').read_text())['url']
 def native(op,data):
  req=urllib.request.Request(url+'native/'+op,data=json.dumps(data).encode(),headers={'Content-Type':'application/json'})
  with urllib.request.urlopen(req,timeout=35) as r:return json.load(r)
@@ -22,7 +22,7 @@ assert api('/api/commands',payload)==first
 checks=dict(gateway_info=info,audio_status=first,idempotent_retry=True)
 for label,headers,body,expected in [('unauthenticated',{},b'{}',401),('browser_origin',{'Origin':'http://untrusted.invalid'},b'{}',403),('deep_json',{},b'{"a":'*13+b'0'+b'}'*13,400)]:
  try:
-  req=urllib.request.Request('http://172.19.71.199:8080/api/commands',data=body,headers=headers)
+  req=urllib.request.Request('http://192.0.2.10:8080/api/commands',data=body,headers=headers)
   urllib.request.urlopen(req,timeout=5);raise AssertionError('unexpected acceptance')
  except urllib.error.HTTPError as e:assert e.code==expected,(label,e.code);checks[label]=e.code
 import sys

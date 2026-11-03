@@ -37,7 +37,7 @@ Set-Location D:\project\AMD
 静态图片预览（修改成真实文件路径）：
 
 ```powershell
-& .\.venv\Scripts\python.exe -m adapter_control.run --image C:/Users/DELL/Pictures/test.jpg --keys down,down,ok --preview output/adapter-camera.png
+& .\.venv\Scripts\python.exe -m adapter_control.run --image C:/Users/example/Pictures/test.jpg --keys down,down,ok --preview output/adapter-camera.png
 ```
 
 无 `--bitfile` 时只生成一张 PNG 并退出，不访问 FPGA，不连接 UART，不自动调用 OCR。`--keys` 仅供主机预览。摄像头预览也可使用 `--camera 0 --keys down,down,ok`，需要当前 Python 环境能导入 `cv2`。

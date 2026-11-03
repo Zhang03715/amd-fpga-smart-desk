@@ -25,4 +25,4 @@ class SnapshotTests(unittest.TestCase):
                 with self.assertRaises(ClientError):read_snapshot('http://127.0.0.1:8766/snapshot')
 
     def test_remote_camera_source_rejected(self):
-        with self.assertRaises(ClientError):read_snapshot('http://172.19.71.189:8766/snapshot')
+        with self.assertRaises(ClientError):read_snapshot('http://192.0.2.10:8766/snapshot')

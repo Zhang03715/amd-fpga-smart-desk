@@ -82,7 +82,7 @@
   {
     "stored": "src/runtime/adapter_control/readme.md",
     "original": "adapter_control/README.md",
-    "sha256": "2aa11fb1ead81492ace51752e1f64d8476e699c17a9e04065eb216d71030b953"
+    "sha256": "6fbb08892de61eb3f705be03b1f18f71debbceadd68462b5d8160c0ae3735e44"
   },
   {
     "stored": "src/runtime/adapter_control/__init__.py",
@@ -5282,7 +5282,7 @@
   {
     "stored": "src/runtime/ocr_link/test_snapshot.py",
     "original": "ocr_link/test_snapshot.py",
-    "sha256": "dab64688dd729de49cb4cc0f7b2e8117bbe72a960edba4961db6605289c1f293"
+    "sha256": "e0717c7ace14855aba08b62c44788c25a868fde9b56fb8c302216c144e965266"
   },
   {
     "stored": "src/runtime/ocr_link/validate_board_images.py",
@@ -5462,7 +5462,7 @@
   {
     "stored": "src/runtime/question_extraction/requirements-layout.lock.txt",
     "original": "question_extraction/requirements-layout.lock.txt",
-    "sha256": "4b0287af1f31edad273c80a211953558c072cb0c235026b52606013026ae3042"
+    "sha256": "5eb783be935cacf6f3222f7f1d24a9c6a866301b503c32fece5db963ceb5b9ed"
   },
   {
     "stored": "src/runtime/question_extraction/run.py",
@@ -5647,7 +5647,7 @@
   {
     "stored": "src/runtime/supervisor/tests/kanban_ui.cjs",
     "original": "supervisor/tests/kanban_ui.cjs",
-    "sha256": "d2594d6a3cabe55ffb1a0334d6a2766083aab891ec728acd32787467a728244a"
+    "sha256": "3f93042a5b887a30ce916369bb9ed1cbaa0c77e97c49ddf72f2040eda88b62c1"
   },
   {
     "stored": "src/runtime/supervisor/tests/live-gateway-proof.json",
@@ -5657,7 +5657,7 @@
   {
     "stored": "src/runtime/supervisor/tests/live_gateway.py",
     "original": "supervisor/tests/live_gateway.py",
-    "sha256": "c2a547c6525a08887716bbff837bd6f76bc880c42bdc20968d7d2e51758fd6ef"
+    "sha256": "e79e02ac9a23406929469e440e736bf8ee0a48aeb99d0db0e48c91fe350baffd"
   },
   {
     "stored": "src/runtime/supervisor/tests/mock_gateway.py",
@@ -5672,17 +5672,17 @@
   {
     "stored": "src/runtime/supervisor/tests/posture_direct_latency.cjs",
     "original": "supervisor/tests/posture_direct_latency.cjs",
-    "sha256": "7e05b34152bc79c2acfa98b3249b1cf62e90c553c8880ad0688e16e6641a7795"
+    "sha256": "effaa7aa5faed3396b0fc58123f9d501707209e52dc9aae1feb190de4a141ba8"
   },
   {
     "stored": "src/runtime/supervisor/tests/posture_live_photo.cjs",
     "original": "supervisor/tests/posture_live_photo.cjs",
-    "sha256": "81b4943dd8eaecdf97179c1b22fd7da24b2d28c9e083b3e567b9a9b8eb2d880d"
+    "sha256": "721eb2a1faa4eee956e467b7233c44e8eb64c86cae0084c53e0a49c73973bba8"
   },
   {
     "stored": "src/runtime/supervisor/tests/product_ui.cjs",
     "original": "supervisor/tests/product_ui.cjs",
-    "sha256": "3382bfc05e28ab289bbc6e2779ceee3aeb15e3ffac75a561bfe6bef4816d54a3"
+    "sha256": "473074705392e3b67b98bdea11c5380817c46d5c8c610ca8e98392252eeb6736"
   },
   {
     "stored": "src/runtime/supervisor/tests/runtime/connection.json",
@@ -5697,17 +5697,17 @@
   {
     "stored": "src/runtime/supervisor/tests/status-dashboard-proof.json",
     "original": "supervisor/tests/status-dashboard-proof.json",
-    "sha256": "131150ce4bde823161f7e959323d8739312417e6d0d2f4c73805a509e8f11590"
+    "sha256": "77ab2252ce5dea1460fc5fcff6dca542a9af8bca6600a41fdaa0f5a54d8df8e7"
   },
   {
     "stored": "src/runtime/supervisor/tests/status_live.cjs",
     "original": "supervisor/tests/status_live.cjs",
-    "sha256": "78f312a41df30823330dabfa9d3b677b7e289be71de0ca0d3ec9498b6e96236e"
+    "sha256": "93883eef13b3d1564076495046161afd2b16cf0de56d01fdb6c9536f23f5061b"
   },
   {
     "stored": "src/runtime/supervisor/tests/ui_smoke.cjs",
     "original": "supervisor/tests/ui_smoke.cjs",
-    "sha256": "d04157e9c6c44e8520961b2742c63adef6fa1492e5d375e34e3accee10ebab65"
+    "sha256": "390d3a07e2f4e3bead999e0be4bd685cd7f00c65403edf154c0dc3e3dfa2ccb6"
   },
   {
     "stored": "src/runtime/supervisor/tools/android_metadata.py",
@@ -5737,7 +5737,7 @@
   {
     "stored": "src/runtime/supervisor/tools/deploy_z2_gateway.py",
     "original": "supervisor/tools/deploy_z2_gateway.py",
-    "sha256": "bef8a585fa14554332868d770c1e547c48dd819fd68eec27482d5eb6a52496a6"
+    "sha256": "445fc8487c5d15eefd489842620ffe2053ea06a7ffe40cbdd80c09162828e0f6"
   },
   {
     "stored": "src/runtime/supervisor/tools/export_lcd_screenshots.py",
@@ -5757,7 +5757,7 @@
   {
     "stored": "src/runtime/supervisor/tools/install_z2_service.py",
     "original": "supervisor/tools/install_z2_service.py",
-    "sha256": "99f981b17e888c041589741797868270c8bd2f68dbddf82c9abf4d65d80df7a0"
+    "sha256": "b7927c731ad1c8999580dbcf3027f956b965253d8a7c14bac8cc969eb42410ab"
   },
   {
     "stored": "src/runtime/supervisor/tools/prepare_offline_idf.py",
@@ -5777,7 +5777,7 @@
   {
     "stored": "src/runtime/supervisor/web/app.js",
     "original": "supervisor/web/app.js",
-    "sha256": "55623cae0b2adbd56da8f3b727bb282399337d5c05e716dc670cc62dbbcbde81"
+    "sha256": "eaf0a3475dbe0f760b36e6afb7ae181a9e93cb2fe68a89f23522dabb30b0fb74"
   },
   {
     "stored": "src/runtime/supervisor/web/index.html",
@@ -5787,7 +5787,7 @@
   {
     "stored": "src/runtime/supervisor/web/product-ui.js",
     "original": "supervisor/web/product-ui.js",
-    "sha256": "fb5ae634dd234ea9ae9600111cf5771c8b842c74a544f4d4bcd99e99f469db4b"
+    "sha256": "4f7fde45275c9a8bd55bd54eed52e6da672afce20f85d9c711243b1a9ea4e7d4"
   },
   {
     "stored": "src/runtime/supervisor/web/style.css",
@@ -6072,7 +6072,7 @@
   {
     "stored": "src/runtime/voice_bridge/pynq_service.py",
     "original": "voice_bridge/pynq_service.py",
-    "sha256": "fbd31abd7b3a25c7794ad51bd5ff5e0b7f62d5109c1adc5b6c6025ae1aa29e09"
+    "sha256": "af98593122a2674ef243fb955671f78590c8b9e1cfaeb49dd3ffc6dcbc679a39"
   },
   {
     "stored": "src/runtime/voice_bridge/remote_book_adapter.py",

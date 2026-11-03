@@ -33,7 +33,7 @@ if(n===2){v.replaceChildren();const p=productPanel('坐得舒服，也坐得端�
 if(n===7){v.replaceChildren();const p=productPanel('错题整理','在题号旁用红色×标记需要收录的题目；整题裁切后保存到桌面“智阅错题”，不进入三槽分拣。');mountWrongCapture(p,current);v.append(p);const records=productPanel('错题记录','与文件分类记录分开管理。');mountRecordBrowser(records,current,'wrong_question');v.append(records);return;}
 if(n===3){mountStudyWorkspace(v,current);return;}
 if(n===4){mountPaperWorkspace(v,current);return;}
-if(n===6){const intro=productPanel('连接你的智阅设备','首次使用按顺序完成，配对成功后会记住这台设备。');intro.innerHTML='<h2>首次使用</h2><ol><li>设备和电脑或手机连接同一个 Wi-Fi。</li><li>填写设备地址和屏幕上的六位配对码。</li><li>检查相机、识别服务和标定状态，再开始使用。</li></ol>';v.prepend(intro);const f=$('pair');f.querySelector('input[name=address]').placeholder='例如：http://172.19.71.199:8080';const p=productPanel('检查是否准备就绪','检查不会移动设备，也不会重新采集标定。');productButton(p,'检查设备',async()=>{const d=await readStatus('status',{details:true});outcome(p,'主机通信正常。'+(d.health?.ocr==='ready'?'找书识别服务已连接。':'找书识别服务尚未连接，请启动电脑端识别服务。')+(d.detector?.baseline_saved?'正坐基准已保存。':'首次使用坐姿提醒时需要采集正坐基准。'));});v.append(p);}
+if(n===6){const intro=productPanel('连接你的智阅设备','首次使用按顺序完成，配对成功后会记住这台设备。');intro.innerHTML='<h2>首次使用</h2><ol><li>设备和电脑或手机连接同一个 Wi-Fi。</li><li>填写设备地址和屏幕上的六位配对码。</li><li>检查相机、识别服务和标定状态，再开始使用。</li></ol>';v.prepend(intro);const f=$('pair');f.querySelector('input[name=address]').placeholder='例如：http://192.0.2.10:8080';const p=productPanel('检查是否准备就绪','检查不会移动设备，也不会重新采集标定。');productButton(p,'检查设备',async()=>{const d=await readStatus('status',{details:true});outcome(p,'主机通信正常。'+(d.health?.ocr==='ready'?'找书识别服务已连接。':'找书识别服务尚未连接，请启动电脑端识别服务。')+(d.detector?.baseline_saved?'正坐基准已保存。':'首次使用坐姿提醒时需要采集正坐基准。'));});v.append(p);}
 };
 
 
